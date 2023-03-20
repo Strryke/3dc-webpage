@@ -36,39 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* component styling */
-.mainContentContainer{
-  display: flex;
-}
-.landingContainer {
-  display:block;
-  background-color: rgb(16, 16, 69);
-}
-.logo {
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  right: 15%;
-  width: 70%;
-  height: auto;
-  transition: all 0.3s ease-in-out;
-}
-
-.hideColorLogo {
-  opacity: 0%;
-}
-.showColorLogo {
-  opacity: 100%;
-}
-
-#partnerSection{
-  display: flex;
-  flex: column;
-  flex-wrap: wrap;
-}
-.partnerDiv{
-  display:inline-block;
-  height: inherit;
-  width: auto;
-}
