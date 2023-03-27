@@ -2,7 +2,7 @@ import "./App.css";
 
 import Navbar from "./component/Navbar/Navbar";
 import Home from "./component/Home/Home";
-
+import About from "./component/About";
 import { useState } from "react";
 
 const sxFooter = {
@@ -20,9 +20,9 @@ function App() {
   };
 
   const generatePage = () => {
-    if (Page === "Home") {
-      return <Home />;
-    }
+    let _page = { 'Home' : <Home/>, 'About': <About/>}
+    
+    return _page[Page]
   };
 
   return (
