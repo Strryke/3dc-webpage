@@ -3,10 +3,10 @@ import Carousel from "react-bootstrap/Carousel";
 const sxCaption = {
   fontFamily: "Google Sans",
   color: "white",
-  position: 'absolute',
-  top: '50%',
+  position: "absolute",
+  top: "50%",
   right: 0,
-  transform: 'translate(-20%, -60%)',
+  transform: "translate(-20%, -60%)",
   textAlign: "center",
   width: "300px",
   maxWidth: "30%",
@@ -37,25 +37,23 @@ function CarousellAnnouncement() {
           }}
         />
         <div className="d-block w-100" style={sxOverlay}>
-            
-            <div style={sxCaption}>
-              <h2
-                style={{
-                  fontSize: "2.5em",
-                  fontWeight: 500,
-                  letterSpacing: 0,
-                  lineHeight: "46px",
-                }}
-              >
-                Biweekly newsletter
-              </h2>
-              <p>
-                Interested in a tech career but unsure of the path? Fret not,
-                stay updated on the latest trends from industry experts
-              </p>
-            </div>
+          <div style={sxCaption}>
+            <h2
+              style={{
+                fontSize: "2.5em",
+                fontWeight: 500,
+                letterSpacing: 0,
+                lineHeight: "46px",
+              }}
+            >
+              Biweekly newsletter
+            </h2>
+            <p>
+              Interested in a tech career but unsure of the path? Fret not, stay
+              updated on the latest trends from industry experts
+            </p>
+          </div>
         </div>
-
       </Carousel.Item>
 
       <Carousel.Item>
@@ -69,27 +67,24 @@ function CarousellAnnouncement() {
           }}
         />
         <div className="d-block w-100" style={sxOverlay}>
-            
-            <div style={sxCaption}>
-              <h2
-                style={{
-                  fontSize: "2.5em",
-                  fontWeight: 500,
-                  letterSpacing: 0,
-                  lineHeight: "46px",
-                }}
-              >
-                Biweekly newsletter
-              </h2>
-              <p>
-                Interested in a tech career but unsure of the path? Fret not,
-                stay updated on the latest trends from industry experts
-              </p>
-            </div>
+          <div style={sxCaption}>
+            <h2
+              style={{
+                fontSize: "2.5em",
+                fontWeight: 500,
+                letterSpacing: 0,
+                lineHeight: "46px",
+              }}
+            >
+              Biweekly newsletter
+            </h2>
+            <p>
+              Interested in a tech career but unsure of the path? Fret not, stay
+              updated on the latest trends from industry experts
+            </p>
+          </div>
         </div>
-
       </Carousel.Item>
-
 
       <Carousel.Item>
         <div
@@ -102,28 +97,24 @@ function CarousellAnnouncement() {
           }}
         />
         <div className="d-block w-100" style={sxOverlay}>
-            
-            <div style={sxCaption}>
-              <h2
-                style={{
-                  fontSize: "2.5em",
-                  fontWeight: 500,
-                  letterSpacing: 0,
-                  lineHeight: "46px",
-                }}
-              >
-                Biweekly newsletter
-              </h2>
-              <p>
-                Interested in a tech career but unsure of the path? Fret not,
-                stay updated on the latest trends from industry experts
-              </p>
-            </div>
+          <div style={sxCaption}>
+            <h2
+              style={{
+                fontSize: "2.5em",
+                fontWeight: 500,
+                letterSpacing: 0,
+                lineHeight: "46px",
+              }}
+            >
+              Biweekly newsletter
+            </h2>
+            <p>
+              Interested in a tech career but unsure of the path? Fret not, stay
+              updated on the latest trends from industry experts
+            </p>
+          </div>
         </div>
-
       </Carousel.Item>
-
-    
     </Carousel>
   );
 }

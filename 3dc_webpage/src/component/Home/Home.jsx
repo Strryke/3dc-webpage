@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import CarousellAnnouncement from "./Carousell";
 import OutlinedCard from "./OutlinedCard";
-import YouTube from "react-youtube";
 
 const sxContainer = {
   fontFamily: "Google Sans",
-  fontSize: "45px",
+  fontSize: "55px",
   fontWeight: "400",
   lineHeight: "57px",
   letterSpacing: "0em",
@@ -25,23 +24,21 @@ function Home() {
 
   return (
     <div>
-      
       <div style={sxContainer}>
         <div
           style={{
             position: "relative",
             backgroundColor: "black",
             height: "600px",
-            
           }}
         >
           <div
             style={{
               position: "absolute",
               top: 0,
-              zIndex:100,
+              zIndex: 100,
               left: "50%",
-              transform: "translateX(-50%)"
+              transform: "translateX(-50%)",
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -64,7 +61,7 @@ function Home() {
               position: "absolute",
               top: 0,
               left: "50%",
-              transform: "translateX(-47.95%)"
+              transform: "translateX(-47.95%)",
             }}
           >
             <img
@@ -75,19 +72,36 @@ function Home() {
                 margin: "0 auto",
                 transition: "all 0.5s ease",
                 opacity: 1,
-                
               }}
             />
           </div>
         </div>
       </div>
-      <div style={{ ...sxContainer, color: "black", backgroundColor: "white" }}>
+      <div
+        style={{
+          ...sxContainer,
+          color: "black",
+          backgroundColor: "white",
+          marginTop: "15px",
+        }}
+      >
         <div>
-          <img
-            src={`${process.env.PUBLIC_URL}/home_sponsors.png`}
-            alt="sponsor"
-          />
+          <picture>
+            <source
+              srcSet={`${process.env.PUBLIC_URL}/ISTD_logo.webp`}
+              type="image/webp"
+            />
+            <source
+              srcSet={`${process.env.PUBLIC_URL}/ISTD_logo.jpg`}
+              type="image/jpeg"
+            />
+            <img
+              src={`${process.env.PUBLIC_URL}/ISTD_logo.jpg`}
+              alt="ISTD logo"
+            />
+          </picture>
         </div>
+        <br />
         <div>Learn Web Development and Machine Learning with us</div>
       </div>
       <div
@@ -118,11 +132,6 @@ function Home() {
           cardTitle="Student Lead Workshops"
         />
         <OutlinedCard
-          imageUrl={`${process.env.PUBLIC_URL}/home_card_merch.png`}
-          buyMerchUrl={"buy_merch"}
-          cardTitle="Merch"
-        />
-        <OutlinedCard
           imageUrl={`${process.env.PUBLIC_URL}/home_card_events.png`}
           when="1pm, 29 Apr 2023"
           where="Where:i3 Lab (1.65)"
@@ -131,14 +140,26 @@ function Home() {
           cardTitle="Events"
         />
       </div>
-
+      <br />
+      <div
+        style={{
+          fontSize: "55px",
+          fontWeight: "400",
+          lineHeight: "57px",
+          letterSpacing: "0em",
+          textAlign: "center",
+        }}
+      >
+        Heads up for the month!
+      </div>
       <div
         style={{
           textAlign: "center",
-          marginBottom: "20px",
+          marginBottom: "50px",
           position: "relative",
         }}
       >
+        <br />
         <iframe
           src="https://calendar.google.com/calendar/embed?src=3dcsutd%40gmail.com&ctz=Asia%2FSingapore"
           title="calendar"
@@ -162,30 +183,9 @@ function Home() {
             lineHeight: "57px",
             letterSpacing: "0em",
           }}
-        >
-          A quick heads up for the month!
-        </div>
+        ></div>
       </div>
-
       <CarousellAnnouncement />
-
-      <div
-        style={{
-          textAlign: "center",
-          margin: "100px",
-        }}
-      >
-        <YouTube
-          videoId={"DcN_hcHXR_0"}
-          opts={{
-            height: "565px",
-            width: "661px",
-            playerVars: {
-              autoplay: 0,
-            },
-          }}
-        />
-      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const sxCaption = {
   fontFamily: "Google Sans",
@@ -99,7 +99,7 @@ function CarousellAnnouncement() {
           </div>
         </div>
 
-        <div
+        {/* <div
           style={sxCarouselControlPrev}
           onMouseEnter={() => setIsLeftArrowHovering(true)}
           onMouseLeave={() => setIsLeftArrowHovering(false)}
@@ -124,8 +124,7 @@ function CarousellAnnouncement() {
             }}
           />
 
-        </div>
-
+        </div> */}
       </div>
     </>
   );
